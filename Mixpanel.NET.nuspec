@@ -12,9 +12,9 @@
     <description>Provides API hooks for the Mixpanel API</description>
     <copyright>Copyright 2011 Chris Nicola</copyright>
     <tags>Analytics Mixpanel</tags>
-    <references>
-      <reference file="src\Mixpanel.NET\bin\Release\Mixpanel.NET.dll" />
-      <reference file="src\Mixpanel.NET\bin\Release\Mixpanel.NET.pdb" />
-    </references>
   </metadata>
+  <files>
+    <file src="src\Mixpanel.NET\bin\Release\Mixpanel.NET.dll" target="lib"></file>
+	<file src="src\Mixpanel.NET\bin\Release\Mixpanel.NET.pdb" target="lib"></file>
+  </files>
 </package>
