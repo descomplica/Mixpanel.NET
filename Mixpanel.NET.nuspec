@@ -13,8 +13,8 @@
     <copyright>Copyright 2011 Chris Nicola</copyright>
     <tags>Analytics Mixpanel</tags>
     <references>
-      <reference file="src/Mixpanel.NET/bin/Release/Mixpanel.NET.dll" />
-      <reference file="src/Mixpanel.NET/bin/Release/Mixpanel.NET.pdb" />
+      <reference file="src\Mixpanel.NET\bin\Release\Mixpanel.NET.dll" />
+      <reference file="src\Mixpanel.NET\bin\Release\Mixpanel.NET.pdb" />
     </references>
   </metadata>
 </package>
