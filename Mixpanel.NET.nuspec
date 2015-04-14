@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Mixpanel.NET</id>
-    <version>0.2.0</version>
+    <id>Descomplica.Mixpanel.NET</id>
+    <version>0.2.1</version>
     <title>Mixpanel API integration for .NET</title>
     <authors>Chris Nicola</authors>
     <owners>Chris Nicola</owners>
@@ -13,8 +13,8 @@
     <copyright>Copyright 2011 Chris Nicola</copyright>
     <tags>Analytics Mixpanel</tags>
     <references>
-      <reference file="Mixpanel.NET.dll" />
-      <reference file="Mixpanel.NET.pdb" />
+      <reference file="src/Mixpanel.NET/bin/Release/Mixpanel.NET.dll" />
+      <reference file="src/Mixpanel.NET/bin/Release/Mixpanel.NET.pdb" />
     </references>
   </metadata>
 </package>
