@@ -28,6 +28,11 @@ namespace Mixpanel.NET.Engage {
       var dictionary = 
         new Dictionary<string, object> {{"$token", token}, {"$distinct_id", distinctId}};
 
+      if (setProperties.ContainsKey("$ip"))
+      {
+        dictionary.Add("$ip", setProperties["$ip"]);
+      }
+
       if (setProperties != null) dictionary.Add("$set", setProperties);
 
       if (incrementProperties != null) dictionary.Add("$add", incrementProperties);
