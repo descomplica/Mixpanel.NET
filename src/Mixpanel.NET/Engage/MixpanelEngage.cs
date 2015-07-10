@@ -22,11 +22,12 @@ namespace Mixpanel.NET.Engage {
       _options = options ?? new EngageOptions();
     }
 
-    private bool Engage(string distinctId, IDictionary<string, object> setProperties = null, 
-      IDictionary<string, object> incrementProperties = null) {
+    private bool Engage(string distinctId, 
+                        IDictionary<string, object> setProperties = null, 
+                        IDictionary<string, object> incrementProperties = null) 
+    {
       // Standardize token and time values for Mixpanel
-      var dictionary = 
-        new Dictionary<string, object> {{"$token", token}, {"$distinct_id", distinctId}};
+      var dictionary = new Dictionary<string, object> {{"$token", token}, {"$distinct_id", distinctId}};
 
       if (setProperties.ContainsKey("$ip"))
       {
@@ -54,6 +55,13 @@ namespace Mixpanel.NET.Engage {
 
     public bool Increment(string distinctId, IDictionary<string, object> incrementProperties) {
       return Engage(distinctId, incrementProperties: incrementProperties);
+    }
+
+    public bool Alias(string distinctId, string alias)
+    {
+      var tracker = new MixpanelTracker(token);
+
+      return tracker.Track("$create_alias", new Dictionary<string, object> { { "distinct_id", distinctId }, { "alias", alias } });
     }
   }
 }
