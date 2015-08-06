@@ -8,6 +8,8 @@ before_build:
 build:
   verbosity: minimal
   publish_nuget: true
+  
+test: off
 
 nuget:
   account_feed: true
