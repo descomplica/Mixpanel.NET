@@ -2,6 +2,6 @@ version: 1.0.{build}
 nuget:
   account_feed: true
 before_build:
-- nuget restore src/Mixpanel.NET/Mixpanel.NET.sln
+- nuget restore src\Mixpanel.NET\Mixpanel.NET.sln
 build:
   verbosity: minimal
