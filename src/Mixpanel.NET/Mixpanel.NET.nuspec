@@ -14,7 +14,7 @@
     <tags>Analytics Mixpanel</tags>
   </metadata>
   <files>
-    <file src="src\Mixpanel.NET\bin\Release\Mixpanel.NET.dll" target="lib"></file>
-	<file src="src\Mixpanel.NET\bin\Release\Mixpanel.NET.pdb" target="lib"></file>
+    <file src="bin\Release\Mixpanel.NET.dll" target="lib"></file>
+	<file src="bin\Release\Mixpanel.NET.pdb" target="lib"></file>
   </files>
 </package>
