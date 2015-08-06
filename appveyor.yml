@@ -6,7 +6,7 @@ before_build:
 - nuget restore src\Mixpanel.NET\Mixpanel.NET.sln
 
 build:
-  project: Remember.sln
+  project: Mixpanel.NET.sln
   verbosity: minimal
   publish_nuget: true
 
