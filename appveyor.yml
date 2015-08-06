@@ -3,7 +3,7 @@ configuration: Release
 platform: Any CPU
 
 before_build:
-- nuget restore src\Mixpanel.NET\Mixpanel.NET.sln
+- nuget restore Mixpanel.NET.sln
 
 build:
   publish_nuget: true
