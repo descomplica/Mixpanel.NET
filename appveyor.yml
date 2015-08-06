@@ -1,7 +1,14 @@
 version: 1.0.{build}
-nuget:
-  account_feed: true
+configuration: Release
+platform: Any CPU
+
 before_build:
 - nuget restore src\Mixpanel.NET\Mixpanel.NET.sln
+
 build:
+  project: Remember.sln
   verbosity: minimal
+  publish_nuget: true
+
+nuget:
+  account_feed: true
