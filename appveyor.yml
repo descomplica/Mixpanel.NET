@@ -5,11 +5,14 @@ platform: Any CPU
 before_build:
 - nuget restore src\Mixpanel.NET\Mixpanel.NET.sln
 
+nuget:
+  account_feed: true
+
 build:
-  verbosity: minimal
   publish_nuget: true
+  include_nuget_references: true
+  verbosity: minimal
   
 test: off
 
-nuget:
-  account_feed: true
+
